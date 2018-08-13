@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#main_header{}
+*{margin: 0 auto;}
+body{width: 1920px;}
+img{display: block;}
+
+#toggle_wrap{width: 960px;height: 80px;margin: 0 auto;position: relative;}
+#toggle_wrap h1{display: block;line-height: 80px;text-align: center;font-size: 24px}
+#toggle_button {position: absolute;top: 15px;right: 0px;}
+#toggle_button label{display: block; background: url(../images/toggle-1.jpg);
+	text-indent: -9999px;height: 50px;width: 50px;}
+#toggle1{display: none;}
+.toggle{background: #eee;width: 100px;position: absolute;right: 0;display: none;}
+
+
+#main_gnb_wrap{height: 30px;width: 100%;border-bottom: 1px solid #eee;}
+#main_gnb{width: 960px;margin: 0 auto;position: relative;padding: 10px;}
+#main_gnb ul{float: right;height: 30px;position: absolute;top: 10px;right: 10px;}
+#main_gnb ul:after{content: "";display: block;clear: both;}
+#main_gnb li{float: left;border-right: 1px solid #000;}
+#main_gnb li:last-child{border-right: none;}
+#main_gnb a{display: block;text-align: center;font-size: 12px;width: 70px;}
+#main_gnb a:hover{background: #eee;}
+
+#sub_gnb_wrap{width: 100%;background:#1d5da4;height: 40px;}
+#sub_gnb{width: 960px;margin: 0 auto;}
+#sub_gnb ul:after{content: "";display: block;clear: both;}
+#sub_gnb li{float: left;width: 16.6%;border-right: 1px solid #eee;box-sizing: border-box;}
+#sub_gnb li:first-child{border-left:1px solid #eee;}
+#sub_gnb a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
+#sub_gnb a:hover{background: gray;}
+
+#visual_wrap{background:#36588e url(../images/sky2.png) no-repeat;height: 396px;
+position: relative;}
+.img01{position: absolute;right: 420px;top: 70px;}
+.img02{position: absolute;left: 470px;top: 50px;`}
+
+#content{background: #eee;height: 200px;width: 100%;}
+#content_wrap{width: 1000px;margin: 0 auto;text-align: center;display: block;
+	position: relative;background: #000;}
+#content_wrap img{width: 100px;height: 100px;padding: 20px;}
+#content_wrap li{font-size: 14px;color: white;}
+#content_wrap strong{color: white;}
+#content_one{width: 200px;height: 200px;position: absolute;left: 0;background: #7c99b9;}
+#content_two{width: 200px;height: 200px;position: absolute;left: 200px;background: #4f74a1;}
+#content_three{width: 200px;height: 200px;position: absolute;left: 400px;background: #4b8ce0;}
+#content_four{width: 200px;height: 200px;position: absolute;left: 600px;background: #3db5f3;}
+#content_five{width: 200px;height: 200px;position: absolute;left: 800px;background: #95c8ff;}
+
+#content_one:hover{background: pink;}
+#content_two:hover{background: pink;}
+#content_three:hover{background: pink;}
+#content_four:hover{background: pink;}
+#content_five:hover{background: pink;}
+
+#main_article{width: 1000px;margin: 0 auto;position: relative;}
+#main_article ul{overflow: hidden;}
+#main_article li{float: left;width: 310px;margin-right: 35px}
+#main_article li:last-child{float: right;margin-right: 0px}
+#main_article .card-body{border: 1px solid #eee;border-top: none;padding: 10px;}
+.card-text{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+font-size: 14px;padding: 10px;color: gray}
+
+.card{width: 100%;}
+.card img{display: block;margin: 0 auto; margin-top:50px}
+.card body{padding: 20px;}
+.card-title{margin-bottom: 5px;padding: 10px;}
+
+#bottom_article{width: 1000px;margin: 0 auto;height: 300px;}
+#bottom_article ul{width: 100%;overflow: hidden;}
+#bottom_article li{float: left;width: 310px;margin-right: 30px;margin-top: 30px;
+		border: 1px solid #eee;height: 180px;}
+#bottom_article li:last-child{margin-right: 0px;float: right;}
+#bottom_article .card{position: relative;}
+#bottom_article .card img{position: absolute;top: -50px;}
+#bottom_article .card-body{padding: 15px; }
+
+#one{width: 100%;background: #4d4d4d;height: 40px;}
+#one ul{width: 1000px;height: 40px;margin: 0 auto;padding: 10px}
+#one ul:after{content: "";display: block;clear: both;}
+#one li{float: left;color: white;
+font-size: 12px;border-right: 1px solid #fff;}
+#one a{display: block;text-align: center;color: white;font-size: 12px;
+padding-right: 20px;padding-left: 10px}
+#one li:last-child{border-right:none;}
+
+
+#two{width: 100%;background: #5e5e5e;height: 100px;color: white;
+position: relative;padding: 20px;}
+#two h2{display: block;position: absolute;left: 470px;}
+#two ul{display: block;position: absolute;left: 620px;}
+#two li{font-size: 12px;}
+
