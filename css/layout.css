@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*.container{width: 1000px;margin: 0 auto;margin-top: 10px}
+.row:after{content: "";display: block;clear: both;}
+.row{margin-bottom: 20px;}
+.row div[class*="span"]{
+	float: left;text-align: justify;margin-left: 2%;padding: 10px;}
+.row div[class*="span"]:first-child{margin-left: 0;}
+.span_6{width: 49%;}
+.span_4{width: 32%;}
+.span_2{width: 23.5%;}*/
+
+
+@media screen and (min-width: 769px){
+	.container{width: 1000px;margin: 0 auto;margin-top: 10px}
+	.row:after{content: "";display: block;clear: both;}
+	.row{margin-bottom: 20px;padding: 10px;}
+	.row div[class*="span"]{
+	float: left;text-align: justify;margin-left: 2%;}
+	.row div[class*="span"]:first-child{margin-left: 0;}
+	.span_6{width: 49%;}
+	.span_4{width: 32%;}
+	.span_2{width: 23.5%;}
+
+	.slider1 div.imgview img{height: 500px;}
+
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+	.container{width: 95%;margin: 0 auto;margin-top: 10px}
+	.row:after{content: "";display: block;clear: both;}
+	.row{margin-bottom: 20px;}
+	.row div[class*="span"]{
+	float: left;text-align: justify;margin-left: 2%;margin-bottom: 10px}
+	.row div[class*="span"]:first-child,
+	.row div[class*="span"]:nth-child(3){margin-left: 0;}
+	.span_6,.span_4,.span_2{width: 49%;}
+	
+	.md_vnone{display: none;}
+}
+@media screen and (max-width: 575px){
+	.row{padding: 10px;}
+	.row div{margin-bottom: 10px}
+	#button{display: none;}
+
+	.mo_none{display: none;}
+	
+}
+
+
+.bg_skyblue{background: skyblue;}
+
+/*card*/
+.card{border: 1px solid #ddd;border-radius: 10px;text-align: center;}
+.card img{border-top-right-radius: 10px;border-top-left-radius:10px;
+width: 100%;}
+.card_body{padding: 20px;}
+.card_body .card_title{font-size: 18px;margin-bottom: 10px}
+.card_text{font-size: 14px;margin-bottom: 10px}
+
+/*button*/
+.btn{padding: 5px 10px;border-radius: 5px; text-align: center;
+transition: 0.3s;}
+.btn a{color: #fff;display: block;line-height: 20px}
+.btn.blue:hover{background: blue;}
+.btn.pink:hover{background: coral;}
+
+/*button color*/
+.btn.blue{background: #aaf;}
+.btn.pink{background: #faa;}
+
+/*bxslider*/
+.bx-wrapper{box-shadow: none;border:none;margin-bottom: 0;}
+.bx-wrapper .bx-pager{bottom: 10px;}
+.span_6 .bx-pager{width: 150px;top: 0;right: 0;height: 10px;}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider1').bxSlider({
+				auto:true
+			});
+		
+			$('.slider2').bxSlider({
+				controls:false
+			});
+		});
+	</script>
+	
+	<style></style>
+	<link rel="stylesheet" href="../css/jquery.bxslider.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<script>
+		function bgclick(){
+			document.getElementsByTagName('body')[0].style.background="url(../images/s01.png)";
+		}
+		function resetclick(){
+			document.getElementsByTagName('body')[0].style.background="";
+		}
+
+	</script>
+	
+</head>
+<body>
+	<div id="button" style="position: absolute;">
+		<div class="btn blue" style="width: 100px" onclick="bgclick()">change</div>
+	</div>
+	<div id="button" style="position: absolute;top: 40px;">
+		<div class="btn blue" style="width: 100px" onclick="resetclick()">reset</div>
+	</div>
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="sapn_12">
+				<div class="slider1">
+					<div class="imgview"><img src="../images/n01.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/n02.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/n03.jpg" alt=""></div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="row bg_skyblue">
+			<div class="span_6 md_vnone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus autem itaque adipisci quasi dolore. Magni corrupti quisquam, facilis modi cum soluta temporibus sint dolorum reiciendis maxime nobis dicta vel possimus fuga porro! Illum maiores pariatur architecto voluptatibus illo ipsa placeat, obcaecati veritatis, hic magnam. Quaerat incidunt nam cumque, pariatur placeat!</div>
+			
+			<div class="span_6">
+				<div class="slider2">
+					<div class="imgview"><img src="../images/n03.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/n02.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/n01.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row bg_gray">
+			<div class="span_4 mo_none">
+				<div class="card">
+					<img src="../images/s01.png" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn blue"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_4">
+				<div class="card">
+					<img src="../images/s02.png" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn blue"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_4 md_vnone mo_none">
+				<div class="card">
+					<img src="../images/s03.png" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn blue"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row bg_powderblue">
+			<div class="span_2">
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn pink"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div> 
+			</div>
+			<div class="span_2 mo_none">
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn pink"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div> 
+			</div>
+			<div class="span_2 mo_none">
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn pink"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div> 
+			</div>
+			<div class="span_2 mo_none">
+				<div class="card">
+					<img src="../images/testimg.jpg" alt="">
+					<div class="card_body">
+						<h4 class="card_title">toy</h4>
+						<p class="card_text">story</p>
+						<div class="btn pink"><a href="tel:000-0000-0000">000-0000-0000</a></div>
+					</div>
+				</div> 
+			</div>	
+			
+		
+		</div>	
+	</div>
+	
+</body>
+</html>
