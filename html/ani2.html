@@ -9,31 +9,39 @@
 		body{box-sizing: border-box;}
 		.box{width: 500px;height: 500px;background: coral;margin: 0 auto;margin-top: 20px;
 			position: relative;}
-		.box img{width: 100%;height: 100%;}
+		.box img{animation-name: moving;animation-delay: 6s;width: 500px;height: 500px;
+			animation-duration: 2s;opacity: 0;animation-fill-mode: forwards;}
 		
-		.ani{animation-duration: 2s;animation-fill-mode: forwards;
-			animation-timing-function: linear;width: 10px;height: 10px;}
-		.one{animation-name: one;}
-		.two{animation-name: two;animation-delay: 2s;position:absolute;left: 490px;top: 0;}
-		.three{animation-name: three;animation-delay: 4s;position:absolute;left: 490px;top: 490px;}
-		.four{animation-name: four;animation-delay: 6s;position:absolute;left: 0;top: 490px}
+		.line{animation-duration: 2s;animation-fill-mode: forwards;
+			animation-timing-function: linear;background: #000;}
+		.one{animation-name: one;position: absolute;left: 0;top: 0; }
+		.two{animation-name: two;animation-delay: 2s;
+			position: absolute;right: 0;top: 0;}
+		.three{animation-name: three;animation-delay: 4s;position:absolute;
+			bottom: 0;right: 0;}
+		.four{animation-name: four;animation-delay: 6s;position:absolute;left: 0;bottom: 0;}
 		
 	
 		@keyframes one{
-			from{left: 0;top: 0;background: #000;}
-			to{left: 500px;top: 0;width: 500px;background: #000;}
+			from{width: 0;height: 10px;}
+			to{width: 500px;height: 10px;}
 		}
 		@keyframes two{
-			from{left: 490px;background: #000;}
-			to{left: 490px;height: 500px;background: #000;}
+			from{height: 0;width: 10px;}
+			to{height: 500px;width: 10px;}
 		}
 		@keyframes three{
-			from{left: 490px;background: #000;}
-			to{left: 0px;width: 500px;background: #000;}
+			from{width: 0;height: 10px;}
+			to{width: 500px;height: 10px;}
 		}
 		@keyframes four{
-			from{left: 0px;background: #000;}
-			to{left: 0px;top:0px;height: 500px;background: #000;}
+			from{height: 0;width: 10px;}
+			to{height: 500px;width: 10px;}
+		}
+		@keyframes moving{
+			from{
+				opacity: 0.5;transform: scale(0.2) rotate(360deg);}
+			to{opacity: 1;transform: scale(1)rotate(0deg);}
 		}
 		
 
@@ -41,11 +49,12 @@
 </head>
 <body>
 	<div class="box">
-		<div class="ani one"></div>
-		<div class="ani two"></div>
-		<div class="ani three"></div>
-		<div class="ani four"></div>
 		<img src="../images/testimg.jpg" alt="">
+		<div class="line one"></div>
+		<div class="line two"></div>
+		<div class="line three"></div>
+		<div class="line four"></div>
+		
 	</div>
 </body>
 </html>
