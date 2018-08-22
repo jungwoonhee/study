@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>top menu</title>
+	<link rel="stylesheet" href="../css/menu2.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="topnav" id="myTopmenu">
+		<a href="#" class="active">HOME</i></a>
+		<a href="#">NEWS</a>
+		<a href="#">CONTACT</a>
+		<a href="#">ABOUT</a>
+		<a href="javascript:void(0)" class="icon" onclick="MenuOpen()">
+			<i class="far fa-grin-stars"></i></a>
+		<!-- <a href="javascript:void(0)" class="exit" onclick="MenuClose()">
+			<i class="fas fa-times"></i></a> -->
+	</div>
+	
+	<div class="content">
+		<h2>Lorem ipsum dolor.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, aperiam!</p>
+	</div>
+	
+	<script>
+		function MenuOpen(){
+			var x = document.getElementById('myTopmenu');
+			if(x.className=="topnav"){
+				x.className+=" responsive";
+				// x.className="topnav + responsive";
+			}else{
+				x.className="topnav";
+
+			}
+		}
+	</script>	
+	
+
+</body>
+</html>

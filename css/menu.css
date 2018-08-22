@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{background: url(../images/w01.jpg) no-repeat;}
+.topnav:after{content: "";display: block;clear: both;}
+.topnav{background: #333;color: #f2f2f2;}
+.topnav a{
+	display: block;float: left;padding: 14px 15px;
+	color:#f2f2f2;font-size: 17px;}
+.topnav a:hover{
+	background:#ddd;color: #000;}
+.active{color: #fff;background: #4caf50;}
+
+.topnav a.icon, .topnav a.exit{display: none;}
+.topnav a.icon{float: right;}
+
+@media screen and (max-width: 600px){
+	.topnav{position: relative;}
+	.topnav a:not(:first-child){display: none;}
+	.topnav a.icon{float: right;display: block;position: absolute;right: 0;top: 0;}
+	.topnav a{float: none;}
+	.topnav a.exit{display: none;float: right;position: absolute;right: 0;top: 0;}
+	.topnav a.class:hover{background: #4caf50;color: #fff;}
+}

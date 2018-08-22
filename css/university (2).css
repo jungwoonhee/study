@@ -25,10 +25,9 @@
 #sub_gnb a{font-size: 20px;color: #00163b}
 #sub_gnb a:hover{border-bottom: 2px solid #0044af;color: #0044af;}
 
-#bg{background-image: url(../images-u/bg.png);background-size: cover;height: 1300px;}
-#bg_content{width: 1200px;margin: 0 auto;}
-
-.bg_text{height: 255px;padding: 60px;padding-left: 0;position: relative;box-sizing: border-box;}
+#bg{background-image: url(./images/bg.png);background-size: cover;height: 1300px;}
+.bg_text{width: 1200px;margin: 0 auto;height: 255px;padding: 60px;padding-left: 0;
+	position: relative;box-sizing: border-box;}
 .bg_text p{font-size: 40px;color: white;}
 .bg_text h1{font-size: 60px;color: white;}
 .bg_plus:after{content: "";display: block;clear: both;}
@@ -37,11 +36,7 @@
 .bg_plus img{display: block;width: 85px;}
 .bg_plus li:hover{background: gray;}
 
-.bg_top{}
-.span_6{width: 50%;background: #eee;}
-.span_3{width: 25%;background: #000;}
-.bg_row:after{content: "";display: block;clear: both;}
-.bg_row [class*="span"]{
-	float: left;padding: 10px;
-}
-
+.bg_center{width: 1200px;margin: 0 auto;position: relative;}
+.wrap{width: 75%}
+.bg_right{width: 25%;position: absolute;top: 0;right: 0;}
+.bg_
