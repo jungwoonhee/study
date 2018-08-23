@@ -5,7 +5,7 @@
 #main_gnb{height: 40px;width: 1200px;position: relative;margin: 0 auto;}
 #main_gnb ul:after{content: "";display: block;clear: both}
 #main_gnb li{float: left;}
-#main_gnb img{display: block;width: 60px;padding:12px;float: right;margin-right: 260px}
+#main_gnb img{display: block;width: 40px;padding:12px;float: right;margin-right: 260px}
 .right{position: absolute;right: 0;}
 .right li{line-height: 40px;}
 .right a{font-size: 12px;display: block;color: white;text-align: center;width: 80px;}
@@ -41,10 +41,25 @@
 .bg_wrap .wrap{width: 75%}
 .bg_right{width: 25%;position: absolute;top: 0;right: 0;}
 
-.bg_row{width: 1200px;margin:0 auto;height: 225px;background: #000;}
+.bg_row{width: 1200px;margin:0 auto;height: 227px;}
 .bg_row:after{content: "";display: block;clear: both;}
 .bg_4{width: 25%;float: left;color: white;}
-.bg_4 .one{width: 300px;background: #00163b;}
-.bg_4 .two{width: 300px;background: #1651b7;}
-.bg_4 .three{width: 300px;background: #fff;}
-.bg_4 .four{width: 300px;}
+.one{height: 227px;background: #00163b;}
+.one p{font-size: 26px;font-weight: bold;padding: 10px;}
+.one img{margin-top: 20px}
+.one img:first-child{margin-left: 10px}
+.one img:hover{background: #333;}
+.two{height: 227px;background: #1651b7;color: white;}
+.two div{border-bottom: 2px solid #fff;width: 260px;margin: 0 auto}
+.two h3{font-size: 26px;margin-top: 10px;margin-bottom: 10px;
+padding: 10px;}
+.two table{width: 270px;margin: 0 auto;margin-top: 15px}
+.two tr{font-size: 14px;margin-top: 20px;line-height: 25px}
+.two tr:hover{color: #eee;}
+.three{height: 227px;background: #fff;}
+.three .text{width: 260px;margin: 0 auto;color: #000;}
+.three h3{color: #112445;font-size: 26px;margin-top: 10px;margin-bottom: 10px;
+padding: 10px;}
+.three p{float: right;width: 120px;}
+
+.four{}
