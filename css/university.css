@@ -25,7 +25,7 @@
 #sub_gnb a{font-size: 20px;color: #00163b}
 #sub_gnb a:hover{border-bottom: 2px solid #0044af;color: #0044af;}
 
-#bg{background-image: url(../images-u/bg.png);background-size: cover;height: 1400px;}
+#bg{background-image: url(../images-u/bg.png);background-size: cover;height: 1350px;}
 
 .bg_text{width: 1200px;margin:0 auto;height: 250px;padding: 60px;padding-left: 0;
 	position: relative;box-sizing: border-box;}
@@ -68,7 +68,17 @@ text-align: center;line-height:50px;font-size: 20px;position: absolute;bottom: 0
 display: none;transition: 0.8s}
 .four:hover .text{display: block;}
 
-.five{height: 230px;background: url(../images-u/uni2.png);transition: 0.8s}
+.five{height: 230px;width: 300px;background: url(../images-u/uni2.png);}
 .five img{display: none;}
 .five:hover img{display: block;}
-.six{width: 900px;height: 230px;}
+.six{height: 230px;width: 900px;background: #fff;}
+/*.five{height: 230px;background: url(../images-u/uni2.png);transition: 0.8s;width: 300px;}
+.five img{display: none;}
+.five:hover img{display: block;}
+.six{width: 900px;height: 230px;margin: 0 auto;background: #000;}
+.six .slider2{float: right;background: #000;}*/
+
+.seven{width: 1200px;height: 70px;background: #fff;margin-top: 30px}
+
+.footer{height: 170px;background: #fff;width: 100%;}
+.ftext{width: 1200px;margin: 0 auto;}
