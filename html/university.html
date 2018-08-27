@@ -13,7 +13,7 @@
 
 	<script>
 		$(document).ready(function(){
-			var myslider=$('.slider').bxSlider({
+			var myslider=$('#slider').bxSlider({
 				pager:false,controls:false,auto:true
 			});
 			$('.prev').click(function(){
@@ -25,28 +25,19 @@
 				return false;
 			});
 
-			$('.slider.two').bxslider({
-				auto:true
+			$('#slidert').bxSlider({
+				auto:true,pager:true
+			});
+
+			$('#sliderth').bxSlider({
+				auto:true,pager:false
+			});
+
+			var i=$('#sliderf').bxSlider({
+				auto:true,pager:false,mode:'vertical',controls:false
 			});
 
 		});
-
-
-
-
-		
-
-		// $(document).ready(function(){
-		// 	$('.slider3').bxSlider({
-		// 		auto:true, pager:true
-		// 	});
-		// });
-
-		// $(document).ready(function(){
-		// 	$('.slider4').bxSlider({
-		// 		auto:true, pager:true
-		// 	});
-		// });
 
 	</script>
 	
@@ -57,6 +48,11 @@
 		.next,.prev{position: absolute;width: 50px;height: 100px;cursor: pointer}
 		.next{left:830px;top: 200px;}
 		.prev{left: 0;top: 200px;}
+
+		.slidert{position: relative;}
+		.bg_4 .bx-wrapper .bx-pager{position:absolute;top: 0;padding-left: 350px;}
+		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #f74237;}
+
 		
 		
 
@@ -115,7 +111,7 @@
 		
 		<div class="bg_wrap">
 			
-			<div class="slider">
+			<div id="slider">
 				<li>
 					<div>
 						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
@@ -205,7 +201,7 @@
 
 			<div class="bg_4 six">
 				
-				<div class="slider two">
+				<div id="slidert">
 					<li>
 						<div>
 							<a href="http://www.naver.com"><img class="trans" src="../images-u/2017text.png"></a>
@@ -237,17 +233,28 @@
 			<div class="bg_4 seven">
 				<ul class="sright">
 					<li class="stext">학사일정</li>
-					<li class="slider3">
-						<div>2018  07</div>
-						<!-- <div>2018  08</div>
-						<div>2018  09</div> -->
+					<li>
+						<div id="sliderth">
+							<div>2018  07</div>
+							<div>2018  08</div>
+							<div>2018  09</div>
+						</div>
 					</li>
 				</ul>
-				<ul class="slider4">
-					<li><strong>2018-1학기 성적 열람 및 상담 신청</strong></li>
-					<li>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+				<ul id="sliderf">
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
+					<li>
+						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
+						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+					</li>
 				</ul>
-				
 			</div>
 		</div>				
 	</section>

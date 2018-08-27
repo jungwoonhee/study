@@ -90,8 +90,12 @@ box-sizing: border-box;}
 .seven ul{float: left}
 .seven li{float: left;line-height: 70px;margin-left: 40px}
 .seven .sright{color: #00163b;font-weight: bold;font-size: 20px}
-.seven .slider3{color: #646566;font-size: 22px}
-.seven .slider4{float: right;font-size: 15px}
+.seven .sright li:last-child{width: 100px;}
+#sliderth{color: #646566;font-size: 22px;width: 50px;}
+#sliderf{float: right;font-size: 15px;width: 800px;height: 70px;}
+#sliderf:after{content: "";display: block;clear: both;}
+#sliderf li{float: left}
+
 
 .footer{height: 170px;background: #fff;width: 100%;color: #646566}
 .ftext{width: 880px;margin-top: 20px;margin-left: 640px}
