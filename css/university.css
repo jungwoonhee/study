@@ -85,16 +85,18 @@ display: none;transition: 0.8s}
 .seven:after{content: "";display: block;clear: both;}
 .seven .sright{width: 300px;height: 70px;border-right: 2px solid #646566;
 box-sizing: border-box;}
-.seven .slider4{width: 900px;height: 70px;}
-
+.seven #sliderf{width: 900px;height: 70px;}
 .seven ul{float: left}
 .seven li{float: left;line-height: 70px;margin-left: 40px}
-.seven .sright{color: #00163b;font-weight: bold;font-size: 20px}
+.seven .sright{color: #00163b;font-weight: bold;font-size: 20px;}
 .seven .sright li:last-child{width: 100px;}
 #sliderth{color: #646566;font-size: 22px;width: 50px;}
-#sliderf{float: right;font-size: 15px;width: 800px;height: 70px;}
+#sliderf{font-size: 15px;width: 800px;height: 70px;}
 #sliderf:after{content: "";display: block;clear: both;}
-#sliderf li{float: left}
+#sliderf li{}
+#sliderf li:after{content: "";display: block;clear: both;}
+#sliderf div{float: left;margin-left: 40px}
+
 
 
 .footer{height: 170px;background: #fff;width: 100%;color: #646566}
