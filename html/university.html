@@ -13,7 +13,7 @@
 
 	<script>
 		$(document).ready(function(){
-			var myslider = $('.slider').bxSlider({
+			var myslider=$('.slider').bxSlider({
 				pager:false,controls:false,auto:true
 			});
 			$('.prev').click(function(){
@@ -25,21 +25,36 @@
 				return false;
 			});
 
-			var myslider=$('.slider2').bxSlider([
-
-				]);
 		});
+
+
+
+
+		
+
+		// $(document).ready(function(){
+		// 	$('.slider3').bxSlider({
+		// 		auto:true, pager:true
+		// 	});
+		// });
+
+		// $(document).ready(function(){
+		// 	$('.slider4').bxSlider({
+		// 		auto:true, pager:true
+		// 	});
+		// });
+
 	</script>
+	
 
 	<style>
-		.wrap{position: relative;}
 		.bx-wrapper{box-shadow: none;border:none;}
-		.bx-wrapper .bx-pager{bottom: 40px;}
-
+		.slider{position: relative;}
 		.next,.prev{position: absolute;width: 50px;height: 100px;cursor: pointer}
-		.next{right: 20px;top: 200px;}
+		.next{left:830px;top: 200px;}
 		.prev{left: 0;top: 200px;}
-		.wrap_button{}   
+		
+		
 
 		
 	</style>
@@ -49,7 +64,7 @@
 	<header id="main_header">
 		<div id="main_gnb_wrap">
 			<div id="main_gnb">
-				<img src="../images-u/plus.png" alt="plus">
+				<a href="#"><img src="../images-u/plus.png" alt="plus"></a>
 				<ul class="right">
 					<li><a href="#">글자크기</a></li>
 					<li><a href="#">찾아오시는 길</a></li>
@@ -65,8 +80,8 @@
 		</div>	
 		
 		<div id="sub_gnb_wrap">	
-			<img src="../images-u/title.png" alt="title" class="title">
-			<img src="../images-u/toggle.png" alt="toggle" class="toggle">
+			<a href="#"><img src="../images-u/title.png" alt="title" class="title"></a>
+			<a href=""><img src="../images-u/toggle.png" alt="toggle" class="toggle"></a>
 			<div id="sub_gnb">
 				<ul>
 					<li><a href="#">대학소개</a></li>
@@ -95,19 +110,35 @@
 			
 		
 		<div class="bg_wrap">
-			<div class="wrap">
-				<div class="slider">
-					<div><img src="../images-u/dream.png" alt="1"></div>
-					<div><img src="../images-u/dream.png" alt="2"></div>
-					<div><img src="../images-u/dream.png" alt="3"></div>
-				</div>
-				<div class="next"><a href="javascript:void(0)"><img src="../images-u/next.png" alt="next"></a></div>
-				<div class="prev"><a href="javascript:void(0)"><img src="../images-u/prev.png" alt="prev"></a></div>
-				<!-- <button type="button" class="wrap_button">▶자세히보기</button> -->
+			
+			<div class="slider">
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="http://www.naver.com"><img class="dreamt" src="../images-u/dreamt.png"></a>
+						<img src="../images-u/dream-1.png">
+					</div>
+				</li>
+				
 			</div>
+			<div class="next"><a href="javascript:void(0)"><img src="../images-u/next.png" alt="next"></a></div>
+			<div class="prev"><a href="javascript:void(0)"><img src="../images-u/prev.png" alt="prev"></a></div>
+				
+			
 			<div class="bg_right">
-				<img src="../images-u/bg_right.png" alt="">
-				<!-- <button type="button" class="wrap_button">▶자세히보기</button> -->
+				<a href="http://www.daum.net"><img class="bgt" src="../images-u/bgt.png"></a>
+				<img src="../images-u/bg_right.png">
 			</div>
 		</div>
 		
@@ -127,19 +158,19 @@
 				<table>
 					<tr>
 						<td>-[공지] 한국대학교 웹진 ...</td>
-						<td>2016-06-17</td>
+						<td>2018-06-17</td>
 					</tr>
 					<tr>
 						<td>-[보도] 우수대학교 선정</td>
-						<td>2016-06-17</td>
+						<td>2018-06-17</td>
 					</tr>
 					<tr>
 						<td>-[공지] 대학입시 설명회 </td>
-						<td>2016-06-17</td>
+						<td>2018-06-17</td>
 					</tr>
 					<tr>
 						<td>-[공지] 2016년 1학기 성적 </td>
-						<td>2016-06-17</td>
+						<td>2018-06-17</td>
 					</tr>	
 				</table>
 			</div>
@@ -169,20 +200,50 @@
 			</div>
 
 			<div class="bg_4 six">
-				<!-- <p>2017년 신ㆍ편입생2차 모집</p>
-				<p>2017.7.1~7.10</p>
-				<p>입학사전예약▶</p> -->
-				<!-- <div class="slider2">
-					<div><img src="../images-u/dream.png" alt="1"></div>
-					<div><img src="../images-u/dream.png" alt="2"></div>
-					<div><img src="../images-u/dream.png" alt="3"></div>
-					<div><img src="../images-u/dream.png" alt="4"></div>
-				</div> -->
+				
+				<div class="slider2">
+					<li>
+						<div>
+							<a href="http://www.naver.com"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+					</li>
+				    <!-- <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li>
+				    <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li>
+				    <li>
+						<div>
+							<a href="#"><img class="trans" src="../images-u/2017text.png"></a>
+							<img src="../images-u/2017-1.png">
+						</div>
+				    </li> -->
+				</div>
 			
 			</div>
 			
 			<div class="bg_4 seven">
-				ddd
+				<ul class="sright">
+					<li>학사일정</li>
+					<li class="slider3">
+						<div>2018  07</div>
+						<!-- <div>2018  08</div>
+						<div>2018  09</div> -->
+					</li>
+				</ul>
+				<!-- <div class="slider4">
+					<div>2018-1학기 성적 열람 및 상담 신청</div>
+					<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
+				</div> -->
+				
 			</div>
 		</div>				
 	</section>

@@ -16,6 +16,7 @@
 .left a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px}
 .left a:hover{color: #00163b;background: #fff;font-weight: bold;}
 
+
 #sub_gnb_wrap{height: 120px;width: 1200px;margin:0 auto;position: relative;}
 .title{display: block;width: 220px;position: absolute;left: 0;padding: 15px;}
 .toggle{display: block;position: absolute;right: 0;width: 100px;margin-top: 35px}
@@ -24,6 +25,7 @@
 #sub_gnb li{float: left;width: 120px;line-height: 120px;text-align: center;}
 #sub_gnb a{font-size: 20px;color: #00163b}
 #sub_gnb a:hover{border-bottom: 2px solid #0044af;color: #0044af;}
+
 
 #bg{background-image: url(../images-u/bg.png);background-size: cover;height: 1350px;}
 
@@ -38,8 +40,11 @@
 .bg_plus li:hover{background: gray;}
 
 .bg_wrap{width: 1200px;margin:0 auto;position: relative;height: 445px;}
-.bg_wrap .wrap{width: 75%}
-.bg_right{width: 25%;position: absolute;top: 0;right: 0;}
+.bg_wrap .slider{width: 900px}
+.bg_right{width: 300px;position: absolute;top: 0;right: 0;}
+.dreamt{position: absolute;bottom: 70px;left: 100px;}
+.bgt{position: absolute;bottom: 80px;left: 35px;}
+
 
 .bg_row{width: 1200px;margin:0 auto;height: 227px;}
 .bg_row:after{content: "";display: block;clear: both;}
@@ -58,6 +63,7 @@ padding: 10px;}
 .two tr:hover{color: #eee;}
 .three{height: 227px;background: #fff;}
 .three .text{width: 260px;margin: 0 auto;color: #000;}
+.three .text div{margin-left: 120px;margin-top: 10px}
 .three h3{color: #112445;font-size: 26px;margin-top: 10px;margin-bottom: 10px;
 padding: 10px;}
 .three p{float: right;width: 120px;}
@@ -71,14 +77,16 @@ display: none;transition: 0.8s}
 .five{height: 230px;width: 300px;background: url(../images-u/uni2.png);}
 .five img{display: none;}
 .five:hover img{display: block;}
-.six{height: 230px;width: 900px;background: #fff;}
-/*.five{height: 230px;background: url(../images-u/uni2.png);transition: 0.8s;width: 300px;}
-.five img{display: none;}
-.five:hover img{display: block;}
-.six{width: 900px;height: 230px;margin: 0 auto;background: #000;}
-.six .slider2{float: right;background: #000;}*/
+.six{height: 230px;width: 900px;background: #fff;position: relative;}
+.six .trans{position: absolute; left: 40px;top: 150px;}
 
-.seven{width: 1200px;height: 70px;background: #fff;margin-top: 30px}
+.seven{width: 1200px;height: 70px;background: #fff;margin-top: 30px;
+	font-size: 20px;color: #000;}
+.seven:after{content: "";display: block;clear: both;}
+.sevne .sright{width: 300px;height: 70px;}
+.seven li{float: left;color: #646566;font-size: 20px;line-height: 70px}
+
+
 
 .footer{height: 170px;background: #fff;width: 100%;}
 .ftext{width: 1200px;margin: 0 auto;}
