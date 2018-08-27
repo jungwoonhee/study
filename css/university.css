@@ -81,12 +81,26 @@ display: none;transition: 0.8s}
 .six .trans{position: absolute; left: 40px;top: 150px;}
 
 .seven{width: 1200px;height: 70px;background: #fff;margin-top: 30px;
-	font-size: 20px;color: #000;}
+	font-size: 20px;color: #646566;}
 .seven:after{content: "";display: block;clear: both;}
-.sevne .sright{width: 300px;height: 70px;}
-.seven li{float: left;color: #646566;font-size: 20px;line-height: 70px}
+.seven .sright{width: 300px;height: 70px;border-right: 2px solid #646566;
+box-sizing: border-box;}
+.seven .slider4{width: 900px;height: 70px;}
 
+.seven ul{float: left}
+.seven li{float: left;line-height: 70px;margin-left: 40px}
+.seven .sright{color: #00163b;font-weight: bold;font-size: 20px}
+.seven .slider3{color: #646566;font-size: 22px}
+.seven .slider4{float: right;font-size: 15px}
 
-
-.footer{height: 170px;background: #fff;width: 100%;}
-.ftext{width: 1200px;margin: 0 auto;}
+.footer{height: 170px;background: #fff;width: 100%;color: #646566}
+.ftext{width: 880px;margin-top: 20px;margin-left: 640px}
+.ftext:after{content: "";display: block;clear: both;}
+.ftext ul{padding: 10px;height: 20px;}
+.ftext li{float: left;font-size: 17px;border-right: 2px solid #646566;
+font-weight: bold;}
+.ftext a{text-align: center;margin-right: 10px;margin-left: 10px}
+.ftext li:last-child{border-right: none;}
+.ftext div{line-height: 15px;font-size: 14px;height: 70px;
+margin-left: 20px;margin-top: 20px}
+.ftext strong{margin-left: 20px}
