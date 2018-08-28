@@ -26,11 +26,20 @@
 			});
 
 			$('#slidert').bxSlider({
-				auto:true,pager:true
+				auto:true,pager:true,controls:false
 			});
 
-			$('#sliderth').bxSlider({
-				auto:true,pager:false
+			var j=$('#sliderth').bxSlider({
+				auto:true,pager:false,controls:false
+			});
+
+			$('.thleft').click(function(){
+				j.goToPrevSlide();
+				return false;
+			});
+			$('.thright').click(function(){
+				j.goToNextSlide();
+				return false;
 			});
 
 			var i=$('#sliderf').bxSlider({
@@ -60,11 +69,12 @@
 		#slidert{position: relative;}
 		.bg_4 .bx-wrapper .bx-pager{position:absolute;top: 0;padding-left: 350px;}
 		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #f74237;}
-
-		.seven>div.bx-wrapper{float:right;width: 860px;position: relative;}
-		.up,.down{position: absolute;right: 10px;}
-		.up{top: 0;}
-		.down{bottom: 0;}
+		
+		
+		.seven>div.bx-wrapper{width: 860px;height: 70px;float: right;}
+		.up,.down{position: absolute;right: 0}
+		.up{top: 0px;}
+		.down{bottom: -5px;}
 		
 	</style>
 
@@ -248,8 +258,11 @@
 							<div>2018  08</div>
 							<div>2018  09</div>
 						</div>
+						<div class="thleft"><</div>
+						<div class="thright">></div>
 					</li>
 				</ul>
+			
 				<ul id="sliderf">
 					<li>
 						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
@@ -266,6 +279,7 @@
 				</ul>	
 				<div class="up"><a href="javascript:void(0)"><img src="../images-u/up.png" alt="next"></a></div>
 				<div class="down"><a href="javascript:void(0)"><img src="../images-u/down.png" alt="prev"></a></div>
+			
 			</div>
 		</div>				
 	</section>
