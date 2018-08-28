@@ -36,6 +36,14 @@
 			var i=$('#sliderf').bxSlider({
 				auto:true,pager:false,mode:'vertical',controls:false
 			});
+			$('.down').click(function(){
+				i.goToPrevSlide();
+				return false;
+			});
+			$('.up').click(function(){
+				i.goToNextSlide();
+				return false;
+			});
 
 		});
 
@@ -44,18 +52,19 @@
 
 	<style>
 		.bx-wrapper{box-shadow: none;border:none;}
-		.slider{position: relative;}
+		#slider{position: relative;}
 		.next,.prev{position: absolute;width: 50px;height: 100px;cursor: pointer}
 		.next{left:830px;top: 200px;}
 		.prev{left: 0;top: 200px;}
 
-		.slidert{position: relative;}
+		#slidert{position: relative;}
 		.bg_4 .bx-wrapper .bx-pager{position:absolute;top: 0;padding-left: 350px;}
 		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #f74237;}
 
-		
-		
-
+		.seven>div.bx-wrapper{float:right;width: 860px;position: relative;}
+		.up,.down{position: absolute;right: 10px;}
+		.up{top: 0;}
+		.down{bottom: 0;}
 		
 	</style>
 
@@ -254,7 +263,9 @@
 						<div><strong>2018-1학기 성적 열람 및 상담 신청</strong></div>
 						<div>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</div>
 					</li>
-				</ul>
+				</ul>	
+				<div class="up"><a href="javascript:void(0)"><img src="../images-u/up.png" alt="next"></a></div>
+				<div class="down"><a href="javascript:void(0)"><img src="../images-u/down.png" alt="prev"></a></div>
 			</div>
 		</div>				
 	</section>
@@ -271,9 +282,9 @@
 				<li><a href="#">이메일 무단수집거부</a></li>
 			</ul>
 
-			<div>대표자 : 홍길동    서울특별시 구로구 구로로 300 (구로동 6가)    사업자등록번화 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호    개인정보관리 책임자 : 홍길동    소비자피해보상보험<br>고객센터 : 1234-5678    FAX : 02-1234-5678    HANGUKUNIVERSITY@HANGUK.COM</div>
+			<div>대표자 : 홍길동    서울특별시 구로구 구로로 300 (구로동 6가)    사업자등록번화 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호    개인정보관리 책임자 : 홍길동    소비자피해보상보험<br>고객센터 : 1234-5678    FAX : 02-1234-5678    HANGUKUNIVERSITY@HANGUK.COM<br><br><strong>COPYRIGHT &copy; HANGUK. ALL RIGHTS RESERVED.</strong></div>
 
-			<strong>COPYRIGHT &copy; HANGUK. ALL RIGHTS RESERVED.</strong>
+			
 
 		</div>
 	</div>

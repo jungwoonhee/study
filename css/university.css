@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#main_header{}
+
 #main_gnb_wrap{background: #0044af;width: 100%;height: 40px;display: block;}
 #main_gnb{height: 40px;width: 1200px;position: relative;margin: 0 auto;}
 #main_gnb ul:after{content: "";display: block;clear: both}
@@ -17,6 +17,7 @@
 .left a:hover{color: #00163b;background: #fff;font-weight: bold;}
 
 
+
 #sub_gnb_wrap{height: 120px;width: 1200px;margin:0 auto;position: relative;}
 .title{display: block;width: 220px;position: absolute;left: 0;padding: 15px;}
 .toggle{display: block;position: absolute;right: 0;width: 100px;margin-top: 35px}
@@ -25,6 +26,7 @@
 #sub_gnb li{float: left;width: 120px;line-height: 120px;text-align: center;}
 #sub_gnb a{font-size: 20px;color: #00163b}
 #sub_gnb a:hover{border-bottom: 2px solid #0044af;color: #0044af;}
+
 
 
 #bg{background-image: url(../images-u/bg.png);background-size: cover;height: 1350px;}
@@ -44,6 +46,7 @@
 .bg_right{width: 300px;position: absolute;top: 0;right: 0;}
 .dreamt{position: absolute;bottom: 70px;left: 100px;}
 .bgt{position: absolute;bottom: 80px;left: 35px;}
+
 
 
 .bg_row{width: 1200px;margin:0 auto;height: 227px;}
@@ -74,39 +77,38 @@ text-align: center;line-height:50px;font-size: 20px;position: absolute;bottom: 0
 display: none;transition: 0.8s}
 .four:hover .text{display: block;}
 
+
 .five{height: 230px;width: 300px;background: url(../images-u/uni2.png);}
 .five img{display: none;}
 .five:hover img{display: block;}
 .six{height: 230px;width: 900px;background: #fff;position: relative;}
 .six .trans{position: absolute; left: 40px;top: 150px;}
 
+
 .seven{width: 1200px;height: 70px;background: #fff;margin-top: 30px;
 	font-size: 20px;color: #646566;}
 .seven:after{content: "";display: block;clear: both;}
 .seven .sright{width: 300px;height: 70px;border-right: 2px solid #646566;
 box-sizing: border-box;}
-.seven #sliderf{width: 900px;height: 70px;}
 .seven ul{float: left}
-.seven li{float: left;line-height: 70px;margin-left: 40px}
+.seven .sright li{float: left;line-height: 70px;margin-left: 40px}
 .seven .sright{color: #00163b;font-weight: bold;font-size: 20px;}
 .seven .sright li:last-child{width: 100px;}
+
 #sliderth{color: #646566;font-size: 22px;width: 50px;}
-#sliderf{font-size: 15px;width: 800px;height: 70px;}
-#sliderf:after{content: "";display: block;clear: both;}
-#sliderf li{}
+#sliderf{font-size: 15px;line-height: 70px;position: absolute;right: : 0;}
 #sliderf li:after{content: "";display: block;clear: both;}
-#sliderf div{float: left;margin-left: 40px}
+#sliderf div{float: left;margin-left: 20px}
 
 
 
-.footer{height: 170px;background: #fff;width: 100%;color: #646566}
+.footer{height: 150px;background: #fff;width: 100%;color: #646566}
 .ftext{width: 880px;margin-top: 20px;margin-left: 640px}
 .ftext:after{content: "";display: block;clear: both;}
 .ftext ul{padding: 10px;height: 20px;}
-.ftext li{float: left;font-size: 17px;border-right: 2px solid #646566;
+.ftext li{float: left;font-size: 15px;border-right: 2px solid #646566;
 font-weight: bold;}
 .ftext a{text-align: center;margin-right: 10px;margin-left: 10px}
 .ftext li:last-child{border-right: none;}
 .ftext div{line-height: 15px;font-size: 14px;height: 70px;
-margin-left: 20px;margin-top: 20px}
-.ftext strong{margin-left: 20px}
+margin-left: 20px;}
