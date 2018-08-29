@@ -1,10 +1,11 @@
 @charset "uff-8";
 
 #header_wrap{height: 88px;width: 100%;background: #076fa6;}
-.header{background: url(../images-h/air.png) no-repeat;margin: 0 auto;width: 1600px;
-position: relative;}
-.header img{position: absolute;left: 100px;}
-.htext{position: absolute;left: 300px;}
-.htext p{font-size: 13px;color: #6c6d6e;}
-.htext span{font-size: 14px;color: #152630;font-weight: bold;}
+.header{background: url(../images-h/air.png) no-repeat;margin: 0 auto;width: 1600px;}
+.header>img{display: block;width: 200px;}
+
+#bo_sch label{font-size: 14px;color: #152630;font-weight: bold;}
+#bo_sch .sch_input{font-size: 13px;color: #6c6d6e;border: none;}
+#bo_sch .sch_btn{border: none;background: #fff;}
+
 .sns{}

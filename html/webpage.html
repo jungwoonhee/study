@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/reset.css">	
 	<link rel="stylesheet" href="../css/webpage.css">
 	<link rel="stylesheet" href="../css/jquery.bxslider.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<script src="../js/jquery.js"></script>
 	<script src="../js/jquery.bxslider.js"></script>
 
@@ -16,9 +17,18 @@
 	<header id="header_wrap">
 		<section class="header">
 			<img src="../images-h/title.png" alt="title">
-			<div class="htext">
-				<p><span>SEARCH</span>검색어를 입력하세요.</p>
-			</div>
+
+			<fieldset id="bo_sch" style="width: 300px">
+				<form name="fsearch" method="get">
+					<label for="sfz" class="sound_only">SEARCH</label>
+					<input type="text" name="stx" id="sfz" size="25" maxlength="20" placeholder="검색어를 입력하세요." class="sch_input"
+					required>
+					<button type="submit" value="검색" class="sch_btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</fieldset>
+
 			<div class="sns">
 				<a href="https://ko-kr.facebook.com/"><img src="../images-h/fb.png" alt=""></a>
 				<a href="https://twitter.com/?lang=ko"><img src="../images-h/tw.png" alt=""></a>
@@ -26,6 +36,7 @@
 				<a href="https://www.youtube.com/"><img src="../images-h/in.png" alt=""></a>
 			</div>
 		</section>
+
 		<div class="gnb_wrap">
 			<ul>
 				<li>여행도시</li>
