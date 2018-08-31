@@ -15,40 +15,73 @@
 </head>
 <body>
 	<header id="header_wrap">
-		<section class="header">
-			<img src="../images-h/title.png" alt="title">
-
-			<fieldset id="bo_sch" style="width: 300px">
-				<form name="fsearch" method="get">
-					<label for="sfz" class="sound_only">SEARCH</label>
-					<input type="text" name="stx" id="sfz" size="25" maxlength="20" placeholder="검색어를 입력하세요." class="sch_input"
-					required>
-					<button type="submit" value="검색" class="sch_btn">
-						<i class="fas fa-search"></i>
-					</button>
-				</form>
-			</fieldset>
-
-			<div class="sns">
-				<a href="https://ko-kr.facebook.com/"><img src="../images-h/fb.png" alt=""></a>
-				<a href="https://twitter.com/?lang=ko"><img src="../images-h/tw.png" alt=""></a>
-				<a href="https://www.google.cokr"><img src="../images-h/bind.png" alt=""></a>
-				<a href="https://www.youtube.com/"><img src="../images-h/in.png" alt=""></a>
+		<div class="header_img">
+			<div class="header">
+				<a href="#"><img src="../images-h/title.png" alt="title"></a>
+				<fieldset id="bo_sch" style="width: 300px">
+					<form name="fsearch" method="get">
+						<label for="sfz" class="sound_only">SEARCH</label>
+						<input type="text" name="stx" id="sfz" size="25" maxlength="20" placeholder="검색어를 입력하세요." class="sch_input"
+						required>
+						<button type="submit" value="검색" class="sch_btn">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+				</fieldset>
+				<div class="sns">
+					<a href="https://ko-kr.facebook.com/"><img src="../images-h/fb.png" alt=""></a>
+					<a href="https://twitter.com/?lang=ko"><img src="../images-h/tw.png" alt=""></a>
+					<a href="https://www.google.cokr"><img src="../images-h/bind.png" alt=""></a>
+					<a href="https://www.youtube.com/"><img src="../images-h/in.png" alt=""></a>
+				</div>
 			</div>
-		</section>
-
+		</div>
+	
 		<div class="gnb_wrap">
-			<ul>
-				<li>여행도시</li>
-				<li>호텔예약</li>
-				<li>렌트카</li>
-				<li class="new">여행TIP</li>
-				<li>회사소개</li>
-				<li>커뮤니티</li>
+			<ul class="gnb">
+				<li><a href="#">여행도시</a></li>
+				<li><a href="#">호텔예약</a></li>
+				<li><a href="#">렌트카</a></li>
+				<li class="new"><a href="#">
+					<img src="../images-h/new.png" alt="new">여행TIP</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">커뮤니티</a></li>
 			</ul>
 		</div>
 	</header>
 
+	<div class="content">
+		<div class="block"></div>
+
+		<div class="row_wrap">
+			<div class="row">
+				<div class="span one"></div>				
+			</div>
+			<div class="row right">
+				<img src="../images-h/ball.png" alt="ball">
+			</div>
+
+			<div class="row">
+				<div class="span two"></div>
+				<div class="span two"></div>
+			</div>
+
+			<div class="row">
+				<div class="span two"></div>
+				<div class="span two"></div>
+				<div class="span two"></div>
+				<div class="span two"></div>
+			</div>
+			
+			<div class="row">
+				<div class="span two"></div>
+				<div class="span two"></div>
+				<div class="span two"></div>
+				<div class="span two"></div>
+			</div>
+		</div>
+
+	</div>
 
 </body>
 </html>
