@@ -30,7 +30,7 @@ box-sizing: border-box;}
 
 
 /*content*/
-.content{background: url(../images-h/bg.png);background-size:cover;height: 1250px;
+.content{background: url(../images-h/bg2.jpg);background-size:cover;height: 1250px;
 margin: 0 auto;margin-top: 73px;}
 .content:after{content: "";display: block;clear: both;}
 
@@ -41,8 +41,22 @@ margin: 0 auto;margin-top: 73px;}
 .row div[class*="span"]:first-child{margin-left: 0;}
 .row div[class*="span"]:last-child{margin-right: 0;}
 
-.one{width: 490px;height: 300px;background: #eee;margin: 0}
+.one{width: 490px;height: 300px;background: #0099cb;margin: 0;}
 .two{width: 235px;height: 245px;background: #aaf;}
 
-.right{width: 510px;height: 590px;margin:0;float: right;}
+.right{width: 490px;height: 590px;margin:0;float: right;}
 
+/*span one*/
+.sbox{width: 355px;height: 300px;background: #fff;float: right;padding-right: 20px;
+padding-left: 20px;box-sizing: border-box;}
+.sbox li{height: 60px;font-size: 14px;color: #414141;text-align: left;
+	margin-left:10px;margin-right: 10px}
+.sbox:after{content: "";display: block;clear: both;}
+.sone{width: 275px;margin-top: 40px}
+
+.stwo{width: 130px;float: left;}
+.sthree{width: 140px;float: left;}
+.sfour{width: 50px;float: left;}
+
+.sub{background: #ea4f1f;color: white;font-weight: bold;width: 280px;
+height: 40px;border-right: 10px;font-size: 15px}
