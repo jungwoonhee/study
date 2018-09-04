@@ -25,6 +25,10 @@
 				i.goToNextSlide();
 				return false;
 			});
+
+			$('.sbox').bxSlider({
+				controls:false, mode:'vertical', pagerCustom:'.box-pager'
+			});
 		});
 	</script>
 
@@ -33,9 +37,9 @@
 		.right{position: relative;}
 		.next,.prev,.box{position: absolute;cursor: pointer;right: 20px;bottom: 30px;}
 		.prev{right: 45px;}
-		.bx-wrapper .bx-pager{bottom: 30px;color: #fff;padding-left: 110px;}
-		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus { background: #fff;}
-		.bx-wrapper .bx-pager.bx-default-pager a {border: 2px solid #fff;background: none;}
+		.right .bx-wrapper .bx-pager{bottom: 30px;color: #fff;padding-left: 110px;}
+		.right .bx-wrapper .bx-pager.bx-default-pager a:hover,.right .bx-wrapper .bx-pager.bx-default-pager a.active,.right .bx-wrapper .bx-pager.bx-default-pager a:focus { background: #fff;}
+		.right .bx-wrapper .bx-pager.bx-default-pager a {border: 2px solid #fff;background: none;}
 
 	</style>
 
@@ -121,9 +125,128 @@
 								<i class="fas fa-search">검색하기</i></button>
 							</li>
 						</form>
+						<form name="osearch" method="get">
+							<li class="sone">
+								<label for="nation" class="sound_only">가고싶은 나라를 선택하세요.</label>
+						
+								<select name="nation" id="nation">
+									<option value="0">선택하세요</option>
+									<option value="1">KOREA</option>
+									<option value="1">JAPAN</option>
+									<option value="1">CHINA</option>
+									<option value="1">AMERICA</option></select>
+							</li>
+							<li class="stwo">
+								출발일<input type="date" min="2018-09-01">
+								
+							</li>
+							<li class="stwo">
+								도착일<input type="date" min="2018-09-01">
+							</li>
+							<li class="sthree">
+								<label for="seat" class="sound_only">좌석등급</label>
+								<select name="seat" id="seat">
+									<option value="1">일반석</option>
+									<option value="1">비즈니스석</option>
+									<option value="1">일등석</option>
+								</select>
+							</li>
+							<li class="sfour">
+								성인<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li class="sfour">
+								아이<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li>
+								<button type="submit" value="submit" class="sub">
+								<i class="fas fa-search">검색하기</i></button>
+							</li>
+						</form>
+						<form name="osearch" method="get">
+							<li class="sone">
+								<label for="nation" class="sound_only">가고싶은 나라를 선택하세요.</label>
+						
+								<select name="nation" id="nation">
+									<option value="0">선택하세요</option>
+									<option value="1">KOREA</option>
+									<option value="1">JAPAN</option>
+									<option value="1">CHINA</option>
+									<option value="1">AMERICA</option></select>
+							</li>
+							<li class="stwo">
+								출발일<input type="date" min="2018-09-01">
+								
+							</li>
+							<li class="stwo">
+								도착일<input type="date" min="2018-09-01">
+							</li>
+							<li class="sthree">
+								<label for="seat" class="sound_only">좌석등급</label>
+								<select name="seat" id="seat">
+									<option value="1">일반석</option>
+									<option value="1">비즈니스석</option>
+									<option value="1">일등석</option>
+								</select>
+							</li>
+							<li class="sfour">
+								성인<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li class="sfour">
+								아이<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li>
+								<button type="submit" value="submit" class="sub">
+								<i class="fas fa-search">검색하기</i></button>
+							</li>
+						</form>
+						<form name="osearch" method="get">
+							<li class="sone">
+								<label for="nation" class="sound_only">가고싶은 나라를 선택하세요.</label>
+						
+								<select name="nation" id="nation">
+									<option value="0">선택하세요</option>
+									<option value="1">KOREA</option>
+									<option value="1">JAPAN</option>
+									<option value="1">CHINA</option>
+									<option value="1">AMERICA</option></select>
+							</li>
+							<li class="stwo">
+								출발일<input type="date" min="2018-09-01">
+								
+							</li>
+							<li class="stwo">
+								도착일<input type="date" min="2018-09-01">
+							</li>
+							<li class="sthree">
+								<label for="seat" class="sound_only">좌석등급</label>
+								<select name="seat" id="seat">
+									<option value="1">일반석</option>
+									<option value="1">비즈니스석</option>
+									<option value="1">일등석</option>
+								</select>
+							</li>
+							<li class="sfour">
+								성인<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li class="sfour">
+								아이<input type="number" min="1" max="5" placeholder="1">
+							</li>
+							<li>
+								<button type="submit" value="submit" class="sub">
+								<i class="fas fa-search">검색하기</i></button>
+							</li>
+						</form>
+					</div>
+					<div class="box-pager">
+						<li><a href="javascript:void(0)" data-slide-index="0">공항예약</a></li>
+						<li><a href="javascript:void(0)" data-slide-index="1">숙소예약</a></li>
+						<li><a href="javascript:void(0)" data-slide-index="2">렌터카</a></li>
+						<li><a href="javascript:void(0)" data-slide-index="3">휴양지</a></li>
 					</div>
 				</div>				
 			</div>
+			
+
 			<div class="row right">
 				<div id="slider">
 					<img src="../images-h/text.png" alt="text">
