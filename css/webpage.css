@@ -74,12 +74,42 @@ text-align: center;}
 height: 40px;border-right: 10px;font-size: 15px;border-radius: 10px;margin-top: 10px}
 
 
-/*span two*/
-.bone{}
-.bone:hover{background: url(../images-h/bbox1.png);}
-.btwo{background: url(../images-h/bbox2.png);}
-.bthree{background: url(../images-h/bbox3.png);}
-.bfour{background: url(../images-h/bbox4.png);}
+/*span two 2~3*/
+.cone{background: url(../images-h/france.png);width: 235px;height: 245px;position: relative;}
+.cone a{position: absolute;color: #fff}
+.ctwo{background: url(../images-h/japan.png);width: 235px;height: 245px;position: absolute;}
+.ctwo a{position: absolute;color: #fff}
+.ccone{display: block;width: 235px;height: 50px;background: #152630;
+bottom: 0;text-align: center;font-size: 17px;line-height: 50px}
+.ccone span{color: #6fd76e;padding-left: 20px;padding-right: 20px;}
 
-/*.bone img{display: none;}*/
-.bone:hover .bone img{display: block;}
+
+
+.cthree{background: url(../images-h/tokyo.png) no-repeat;width: 235px;height: 245px;position: relative;}
+.cthree p{color: #fff;width: 235px;height: 70px;background: rgb(0,0,0,0.6);padding: 10px;box-sizing: border-box;
+	position: absolute;bottom: 0;font-size: 14px;opacity: 0}
+.cthree:hover p{opacity: 1;}
+
+
+/*span two bottom*/
+.bone{background: url(../images-h/bbox1.png) no-repeat;}
+.bone img{opacity: 0;transform: 0.5s;}
+.bone:hover img{opacity: 1;}
+
+.btwo{background: url(../images-h/bbox2.png) no-repeat;}
+.btwo img{opacity: 0;transform: 0.5s;}
+.btwo:hover img{opacity: 1;}
+
+.bthree{background: url(../images-h/bbox3.png) no-repeat;}
+.bthree img{opacity: 0;transform: 0.5s;}
+.bthree:hover img{opacity: 1;}
+
+.bfour{background: url(../images-h/bbox4.png) no-repeat;}
+.bfour img{opacity: 0;transform: 0.5s;}
+.bfour:hover img{opacity: 1;}
+
+
+/*footer*/
+.footer{height: 80px;background: #fff;width: 1000px;margin: 0 auto;padding: 10px;}
+.footer span{font-size: 14px;font-weight: bold;}
+.footer p{font-size: 12px;color: #555353;padding-top: 10px;}
