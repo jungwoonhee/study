@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script>
+		$(function(){
+			$(".smenu").hide();
+			$("#sub_gnb>ul>li").hover(function(){
+				var a=$(this).index();
+				$(".smenu").eq(a).stop().slideDown();
+			},function(){
+				$(".smenu").hide()
+			})
+			$("#sub_gnb")
+			$(".sub").hide();
+			$(".menu>ul>li").hover(function(){
+				var i=$(this).index();
+				$(".sub").eq(i).stop().slideDown()
+			},function(){
+				$(".sub").hide();
+			})
+
+		})
+	</script>
+	<style>
+	#sub_gnb_wrap{width: 100%;background:#1d5da4;height: 40px;}
+	#sub_gnb{width: 960px;margin: 0 auto;}
+	#sub_gnb ul:after{content: "";display: block;clear: both;}
+	#sub_gnb li{float: left;width: 200px;border-right: 1px solid #eee;box-sizing: border-box;}
+	#sub_gnb li:first-child{border-left:1px solid #eee;}
+	#sub_gnb a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
+	#sub_gnb a:hover{background: gray;}
+	</style>
+</head>
+<body>
+<nav class="menu">
+				<ul>
+					<li>menu1
+						<ul class="sub">
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+						</ul></li>
+					<li>menu2
+						<ul class="sub">
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+						</ul></li>
+					<li>menu3
+						<ul class="sub">
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+						</ul></li>
+					<li>menu4
+						<ul class="sub">
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+						</ul></li>
+					<li>menu5
+						<ul class="sub">
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+							<li>s_menu</li>
+						</ul></li>
+				</ul>
+			</nav>
+
+		<div id="sub_gnb_wrap">	
+			<nav id="sub_gnb">
+				<ul>
+					<li><a href="#">회사소개</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+					<li><a href="#">제품소개</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+					<li><a href="#">사업영역</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+					<li><a href="#">고객센터</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+					<li><a href="#">사회공헌</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+					<li><a href="#">인재채용</a>
+						<ul class="smenu">
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+							<li>sub_menu</li>
+						</ul></li>
+				</ul>
+			</nav>
+		</div>
+</body>
+</html>

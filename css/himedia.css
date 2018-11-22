@@ -8,10 +8,9 @@
 #toggle_wrap{width: 960px;height: 80px;margin: 0 auto;position: relative;}
 #toggle_wrap h1{display: block;line-height: 80px;text-align: center;font-size: 24px}
 #toggle_button {position: absolute;top: 15px;right: 0px;}
-#toggle_button label{display: block; background: url(../images/toggle-1.jpg);
-	text-indent: -9999px;height: 50px;width: 50px;}
-#toggle1{display: none;}
-.toggle{background: #eee;width: 100px;position: absolute;right: 0;display: none;}
+#toggle_button div{display: block; background: url(../images/toggle-1.jpg);
+	height: 50px;width: 50px;}
+
 
 
 #main_gnb_wrap{height: 30px;width: 100%;border-bottom: 1px solid #eee;}
@@ -26,7 +25,7 @@
 #sub_gnb_wrap{width: 100%;background:#1d5da4;height: 40px;}
 #sub_gnb{width: 960px;margin: 0 auto;}
 #sub_gnb ul:after{content: "";display: block;clear: both;}
-#sub_gnb li{float: left;width: 16.6%;border-right: 1px solid #eee;box-sizing: border-box;}
+#sub_gnb li{float: left;width: 160px;border-right: 1px solid #eee;box-sizing: border-box;}
 #sub_gnb li:first-child{border-left:1px solid #eee;}
 #sub_gnb a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
 #sub_gnb a:hover{background: gray;}
