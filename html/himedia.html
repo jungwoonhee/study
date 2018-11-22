@@ -6,6 +6,32 @@
 	<title>하이미디어</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/himedia.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script>
+		$(function(){
+			var i=$('#visual_wrap').bxSlider({
+				auto:true, pagerCustom:'#pager', controls:false
+			})
+			$(".prev").click(function(){
+				i.goToPrevSlide();
+				return false;
+			})
+			$(".next").click(function(){
+				i.goToNextSlide();
+				return false
+			})
+		})
+	</script>
+	<style>
+		#visual_wrap{position: relative;}
+		#pager{position: absolute;bottom: 470px;left: 520px;}
+		#pager a{background: #fff;width: 70px;height: 5px;margin: 5px;float: left;}
+		#pager a:hover, #pager a.active{background: #15477C;}
+		#controls{position: absolute;top: 320px;}
+		.prev {width: 80px;height: 80px;border-left: 4px solid #eee;border-top: 4px solid #eee;transform: rotate(-45deg);left: 220px;position: absolute;}
+		.next {width: 80px;height: 80px;border-right: 4px solid #eee;border-top: 4px solid #eee;transform: rotate(45deg);position: absolute;left: 1600px;}
+	</style>
 <body>
 	<header id="main_header">
 		<div id="main_gnb_wrap">
@@ -23,18 +49,7 @@
 		<input type="checkbox" id="toggle1">
 		<div id="toggle_wrap">
 			<h1>하이미디어</h1>
-			<div id="toggle_button">
-				<label for="toggle1" class="right" onclick="">c</label>
-			</div>
-			<div class="toggle">
-				<ul>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
-				</ul>
-			</div>
+			
 		</div>
 		
 		<div id="sub_gnb_wrap">	
@@ -52,10 +67,19 @@
 	</header>
 	
 	<div id="visual_wrap">
-		<div class="visual">
-			<img src="../images/bulb.png" alt="bulb" class="img01">
-			<img src="../images/next.png" alt="next energy" class="img02">
-		</div>
+		<li><img src="../images/sky3.png" alt="sky"></li>
+		<li><img src="../images/sky3.png" alt="sky"></li>
+		<li><img src="../images/sky3.png" alt="sky"></li>
+	</div>
+	<div id="pager">
+		<a data-slide-index=0 href=""></a>
+		<a data-slide-index=1 href=""></a>
+		<a data-slide-index=2 href=""></a>
+	</div>
+
+	<div id="controls">
+		<div class="prev"></div>
+		<div class="next"></div>
 	</div>
 	
 	<div id="content">

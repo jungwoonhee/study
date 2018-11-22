@@ -2,8 +2,8 @@
 
 #main_header{}
 *{margin: 0 auto;}
-body{width: 1920px;}
-img{display: block;}
+/*body{width: 1920px;}*/
+/*img{display: block;}*/
 
 #toggle_wrap{width: 960px;height: 80px;margin: 0 auto;position: relative;}
 #toggle_wrap h1{display: block;line-height: 80px;text-align: center;font-size: 24px}
@@ -31,12 +31,10 @@ img{display: block;}
 #sub_gnb a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
 #sub_gnb a:hover{background: gray;}
 
-#visual_wrap{background:#36588e url(../images/sky2.png) no-repeat;height: 396px;
-position: relative;}
-.img01{position: absolute;right: 420px;top: 70px;}
-.img02{position: absolute;left: 470px;top: 50px;`}
+#visual_wrap{width: 100%;position: relative;}
 
-#content{background: #eee;height: 200px;width: 100%;}
+
+#content{background: #eee;height: 200px;width: 100%;margin-top: -4px;}
 #content_wrap{width: 1000px;margin: 0 auto;text-align: center;display: block;
 	position: relative;background: #000;}
 #content_wrap img{width: 100px;height: 100px;padding: 20px;}
@@ -86,7 +84,7 @@ padding-right: 20px;padding-left: 10px}
 #one li:last-child{border-right:none;}
 #one img{float: right;margin-right: 450px}
 
-#two{width: 100%;background: #5e5e5e;height: 100px;color: white;
+#two{background: #5e5e5e;height: 100px;color: white;
 position: relative;padding: 20px;}
 #two h2{display: block;position: absolute;left: 470px;}
 #two ul{display: block;position: absolute;left: 620px;}
