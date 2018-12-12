@@ -23,11 +23,12 @@
 			})
 			$(".smenu").hide();
 			$("#sub_gnb>ul>li").hover(function(){
-				var a=$(this).index();
-				$(".smenu").eq(a).stop().slideDown();
+				var i=$(this).index();
+				$(".smenu").eq(i).slideDown();
 			},function(){
-				$(".smenu").hide()
+				$(".smenu").slideUp();
 			})
+		
 		})
 	</script>
 	<style>
@@ -68,45 +69,45 @@
 				<ul>
 					<li><a href="#">회사소개</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 					<li><a href="#">제품소개</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 					<li><a href="#">사업영역</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 					<li><a href="#">고객센터</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 					<li><a href="#">사회공헌</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 					<li><a href="#">인재채용</a>
 						<ul class="smenu">
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
-							<li>sub_menu</li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
+							<li><a href="#">sub_menu</a></li>
 						</ul></li>
 				</ul>
 			</nav>

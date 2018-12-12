@@ -24,11 +24,16 @@
 
 #sub_gnb_wrap{width: 100%;background:#1d5da4;height: 40px;}
 #sub_gnb{width: 960px;margin: 0 auto;}
-#sub_gnb ul:after{content: "";display: block;clear: both;}
-#sub_gnb li{float: left;width: 160px;border-right: 1px solid #eee;box-sizing: border-box;}
-#sub_gnb li:first-child{border-left:1px solid #eee;}
-#sub_gnb a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
-#sub_gnb a:hover{background: gray;}
+#sub_gnb>ul:after{content: "";display: block;clear: both;}
+#sub_gnb>ul>li{float: left;width: 160px;border-right: 1px solid #eee;box-sizing: border-box;}
+#sub_gnb>ul>li:first-child{border-left:1px solid #eee;}
+#sub_gnb>ul>li>a{display: block;line-height: 40px;text-align: center;color: white;font-size: 16px;}
+#sub_gnb>ul>li>a:hover{background: gray;}
+
+.smenu{;width: 160px;}
+.smenu>li{text-align: center;padding: 10px;background: rgba(255,255,255,0.6)}
+.smenu>li>a{display: block;}
+.smenu>li:hover{background: rgba(255,255,255);}
 
 #visual_wrap{width: 100%;position: relative;}
 
